@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>요구사항 · YUYU 구축 진행 현황</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-in"><a class="brand" href="index.html"><i></i>YUYU Healthcare <small>구축 진행</small></a><nav class="nav" aria-label="주 메뉴"><a href="index.html">개요</a><a href="roadmap.html">로드맵</a><a href="requirements.html" aria-current="page">요구사항</a><a href="tracks/index.html">트랙</a><a href="homepage.html">홈페이지 상세</a><a href="commits.html">최근 작업</a></nav></div></header>
+<main>
+<section><p class="eyebrow">검수 ID</p><h1>요구사항</h1><p class="lead">요구사항 상태는 연결된 로드맵 항목의 상태에서 계산한다. 모두 완료면 완료, 하나라도 시작했으면 진행, 아니면 가장 앞선 상태다. 오픈 행은 계산에서 뺀다.</p></section>
+<section class="sec"><header><h2>기반 구축 요구사항 상태</h2><p>22건</p></header><div class="card"><div class="bar lg" role="img" aria-label="진행 2, 뼈대 3, 대기 5, 시작 전 12"><i class="f-prog" style="width:9.09%"></i><i class="f-skel" style="width:13.64%"></i><i class="f-wait" style="width:22.73%"></i><i class="f-todo" style="width:54.55%"></i></div><div class="legend"><span><i class="f-prog"></i>진행 <b>2</b></span><span><i class="f-skel"></i>뼈대 <b>3</b></span><span><i class="f-wait"></i>대기 <b>5</b></span><span><i class="f-todo"></i>시작 전 <b>12</b></span></div></div></section>
+<div data-filterable><form class="filters" role="search" onsubmit="return false">
+    <label>상태<select data-f="status"><option value="">전체</option><option value="완료">완료</option><option value="진행">진행</option><option value="뼈대">뼈대</option><option value="대기">대기</option><option value="시작 전">시작 전</option><option value="—">연결 항목 없음</option><option value="out">범위 제외·다음 단계</option></select></label>
+    <label>영역<select data-f="area"><option value="">전체</option><option value="홈페이지">홈페이지</option><option value="중앙화">중앙화</option><option value="효율화">효율화</option><option value="공통">공통</option><option value="AI · 영업">AI · 영업</option><option value="AI · 개발">AI · 개발</option><option value="AI · 구매">AI · 구매</option><option value="AI · 생산관리">AI · 생산관리</option><option value="AI · 생산">AI · 생산</option><option value="AI · 품질">AI · 품질</option><option value="AI · 물류">AI · 물류</option><option value="AI · 재무">AI · 재무</option><option value="AI · 손익">AI · 손익</option><option value="공장 연결">공장 연결</option><option value="의사결정">의사결정</option><option value="다공장">다공장</option></select></label>
+    <label>납품 묶음<select data-f="stage"><option value="">전체</option><option value="1차 묶음">1차 묶음</option><option value="3차 묶음">3차 묶음</option><option value="2차 묶음">2차 묶음</option><option value="범위 제외">범위 제외</option><option value="협의·인계 시점">협의·인계 시점</option><option value="다음 단계">다음 단계</option></select></label>
+    <label class="grow">검색<input type="search" data-f="q" placeholder="ID, 검수 기준, 항목" autocomplete="off"></label>
+    <span class="count" data-count aria-live="polite"></span>
+  </form><div class="empty" data-empty hidden>조건에 맞는 요구사항이 없다.</div><div class="grid g2"><article class="card req" id="H-01" data-item data-status="진행" data-stage="1차 묶음" data-area="홈페이지" data-text="H-01 국·영·중(간체) 반응형 홈페이지: 회사·사업·ODM/OEM·생산·품질·R&amp;D·제품 소개 PC·모바일 화면, 언어 전환, 최종 문안·이미지 승인 1차 묶음 (6주차 목표) 홈페이지 K-01 중국어 간체 추가(2026-10-26 결정) 2-1">
+  <div class="req-h"><span class="req-id">H-01</span><span class="chip s-prog">진행</span><span class="pill key">K-01</span><span class="detail">홈페이지 · 홈페이지</span></div>
+  <h3>국·영·중(간체) 반응형 홈페이지: 회사·사업·ODM/OEM·생산·품질·R&amp;D·제품 소개</h3>
+  <dl><div><dt>검수 기준</dt><dd>PC·모바일 화면, 언어 전환, 최종 문안·이미지 승인</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>비고</dt><dd>중국어 간체 추가(2026-10-26 결정)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-2-1"><i class="dot d-prog" aria-hidden="true"></i><b>2-1</b>진행</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="H-02" data-item data-status="진행" data-stage="1차 묶음" data-area="홈페이지" data-text="H-02 제품 검색·상세, 공지·자료·생산 문의, 콘텐츠 관리자, 검색 노출 기본 설정, 이전 URL 연결 등록·수정·검색, 문의 수신, 관리자 권한 확인, 외부 공개 전 웹 취약점 점검 결과와 조치 내역 1차 묶음 (6주차 목표) 홈페이지 K-01  2-1">
+  <div class="req-h"><span class="req-id">H-02</span><span class="chip s-prog">진행</span><span class="pill key">K-01</span><span class="detail">홈페이지 · 홈페이지</span></div>
+  <h3>제품 검색·상세, 공지·자료·생산 문의, 콘텐츠 관리자, 검색 노출 기본 설정, 이전 URL 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>등록·수정·검색, 문의 수신, 관리자 권한 확인, 외부 공개 전 웹 취약점 점검 결과와 조치 내역</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-2-1"><i class="dot d-prog" aria-hidden="true"></i><b>2-1</b>진행</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-01" data-item data-status="시작 전" data-stage="1차 묶음" data-area="중앙화" data-text="S1-01 팀별 실제 업무 흐름(Workflow) 확정, R&amp;R 및 성과 체계 연동 부서별 흐름도, 담당·승인자, 성과 연결표, 부서 인터뷰로 도출한 업무 개선 과제·우선순위와 담당자 오리엔테이션 계획 1차 묶음 (6주차 목표) 중앙화  업무 흐름도 작성은 핵심 기능이 아님 2-2">
+  <div class="req-h"><span class="req-id">S1-01</span><span class="chip s-todo">시작 전</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>팀별 실제 업무 흐름(Workflow) 확정, R&amp;R 및 성과 체계 연동</h3>
+  <dl><div><dt>검수 기준</dt><dd>부서별 흐름도, 담당·승인자, 성과 연결표, 부서 인터뷰로 도출한 업무 개선 과제·우선순위와 담당자 오리엔테이션 계획</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>비고</dt><dd>업무 흐름도 작성은 핵심 기능이 아님</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-2-2"><i class="dot d-todo" aria-hidden="true"></i><b>2-2</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-02" data-item data-status="시작 전" data-stage="1차 묶음" data-area="중앙화" data-text="S1-02 Excel·Word·PPT·공유폴더 전수 취합, 문서 종류·담당자 파악 자료 현황 목록, 담당자·보관 위치 대조, 문서를 한곳에 모은 결과 1차 묶음 (6주차 목표) 중앙화 K-02 Notion 방식 문서·위키 공간은 만들지 않음(2026-10-08 결정). 문서 이전 가능 범위는 먼저 확인하고 제한사항을 서면으로 알림 1-6 2-3">
+  <div class="req-h"><span class="req-id">S1-02</span><span class="chip s-todo">시작 전</span><span class="pill key">K-02</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>Excel·Word·PPT·공유폴더 전수 취합, 문서 종류·담당자 파악</h3>
+  <dl><div><dt>검수 기준</dt><dd>자료 현황 목록, 담당자·보관 위치 대조, 문서를 한곳에 모은 결과</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>비고</dt><dd>Notion 방식 문서·위키 공간은 만들지 않음(2026-10-08 결정). 문서 이전 가능 범위는 먼저 확인하고 제한사항을 서면으로 알림</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-1-6"><i class="dot d-todo" aria-hidden="true"></i><b>1-6</b>시작 전</a><a href="roadmap.html#r-2-3"><i class="dot d-todo" aria-hidden="true"></i><b>2-3</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-03" data-item data-status="시작 전" data-stage="1차 묶음" data-area="중앙화" data-text="S1-03 중복·구버전 정리, 파일명·폴더·버전 관리 규칙 통일 원본 보존, 정리 결과, 버전 복원 확인 1차 묶음 (6주차 목표) 중앙화  문서 정리는 핵심 기능이 아님 2-4">
+  <div class="req-h"><span class="req-id">S1-03</span><span class="chip s-todo">시작 전</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>중복·구버전 정리, 파일명·폴더·버전 관리 규칙 통일</h3>
+  <dl><div><dt>검수 기준</dt><dd>원본 보존, 정리 결과, 버전 복원 확인</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>비고</dt><dd>문서 정리는 핵심 기능이 아님</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-2-4"><i class="dot d-todo" aria-hidden="true"></i><b>2-4</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-04" data-item data-status="시작 전" data-stage="1차 묶음" data-area="중앙화" data-text="S1-04 문서 위치와 관계없이 쓰는 회사 공용 검색·열람 권한 안에서 제목·내용 검색(메신저 대화·파일 포함), 금지 문서 노출 차단, 모바일 웹 검색·미리보기 1차 묶음 (6주차 목표) 중앙화 K-02  2-5">
+  <div class="req-h"><span class="req-id">S1-04</span><span class="chip s-todo">시작 전</span><span class="pill key">K-02</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>문서 위치와 관계없이 쓰는 회사 공용 검색·열람</h3>
+  <dl><div><dt>검수 기준</dt><dd>권한 안에서 제목·내용 검색(메신저 대화·파일 포함), 금지 문서 노출 차단, 모바일 웹 검색·미리보기</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-2-5"><i class="dot d-todo" aria-hidden="true"></i><b>2-5</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-05" data-item data-status="뼈대" data-stage="1차 묶음" data-area="중앙화" data-text="S1-05 CEO·임원·팀·개인 접근 권한, ERP 연결, 조직도 기반 보안·버전 체계 조직·계정별 허용·거부, 변경 이력·권한 회수 시험 1차 묶음 (6주차 목표) 중앙화  구상 문서의 'ERP 연결'(조직·사용자 정보를 ERP와 연결)은 2차 오픈의 ERP 연결과 함께 하므로 S2-05에서 최종 검수. 권한 정리는 핵심 기능이 아님. 인사 정보 DB 분리는 C-05 1-2 1-3">
+  <div class="req-h"><span class="req-id">S1-05</span><span class="chip s-skel">뼈대</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>CEO·임원·팀·개인 접근 권한, ERP 연결, 조직도 기반 보안·버전 체계</h3>
+  <dl><div><dt>검수 기준</dt><dd>조직·계정별 허용·거부, 변경 이력·권한 회수 시험</dd></div><div><dt>납품 시기</dt><dd>1차 묶음 (6주차 목표)</dd></div><div><dt>비고</dt><dd>구상 문서의 'ERP 연결'(조직·사용자 정보를 ERP와 연결)은 2차 오픈의 ERP 연결과 함께 하므로 S2-05에서 최종 검수. 권한 정리는 핵심 기능이 아님. 인사 정보 DB 분리는 C-05</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-1-2"><i class="dot d-skel" aria-hidden="true"></i><b>1-2</b>뼈대</a><a href="roadmap.html#r-1-3"><i class="dot d-skel" aria-hidden="true"></i><b>1-3</b>뼈대</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-06" data-item data-status="시작 전" data-stage="3차 묶음" data-area="중앙화" data-text="S1-06 성과 보상 체계와 맞물린 업무 체계 수립·설정 지원 고객이 확정한 지표·평가 주기와 업무 실적 연결 3차 묶음 (12주차 목표) 중앙화 K-11 성과보상 제도 설계·보수 계산 개발 제외 4-3">
+  <div class="req-h"><span class="req-id">S1-06</span><span class="chip s-todo">시작 전</span><span class="pill key">K-11</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>성과 보상 체계와 맞물린 업무 체계 수립·설정 지원</h3>
+  <dl><div><dt>검수 기준</dt><dd>고객이 확정한 지표·평가 주기와 업무 실적 연결</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>비고</dt><dd>성과보상 제도 설계·보수 계산 개발 제외</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-3"><i class="dot d-todo" aria-hidden="true"></i><b>4-3</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-07" data-item data-status="뼈대" data-stage="2차 묶음" data-area="중앙화" data-text="S1-07 사내 메신저 통합, 업무·문서·알림 연결 필수 기능: 채널·1:1·그룹 대화, 스레드·@멘션·이모지 반응, 파일 공유, 대화·파일 검색, 조직도 연동, 결재·업무 알림 수신과 알림에서 바로 승인. 제안 기능(확정 명세에서 검수 기준 포함 여부 결정): 공개·비공개 채널 구분, 조직도 기준 부서 채널 자동 생성·인사 변동 반영, 고정·저장·수정·삭제·읽음 표시, 파일 미리보기, 상태 표시, 채널별 알림 설정 2차 묶음 (9주차 목표) 중앙화 K-07 메신저 자체 구축. 제외: 음성·영상 통화, 외부 거래처 채널. 제외(계획): 화면 공유, 외부 앱 마켓·공개 API, 오프라인. 모바일 푸시는 C-02(아이폰은 iOS 16.4 이상·홈 화면 추가 시) 3-5">
+  <div class="req-h"><span class="req-id">S1-07</span><span class="chip s-skel">뼈대</span><span class="pill key">K-07</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>사내 메신저 통합, 업무·문서·알림 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>필수 기능: 채널·1:1·그룹 대화, 스레드·@멘션·이모지 반응, 파일 공유, 대화·파일 검색, 조직도 연동, 결재·업무 알림 수신과 알림에서 바로 승인. 제안 기능(확정 명세에서 검수 기준 포함 여부 결정): 공개·비공개 채널 구분, 조직도 기준 부서 채널 자동 생성·인사 변동 반영, 고정·저장·수정·삭제·읽음 표시, 파일 미리보기, 상태 표시, 채널별 알림 설정</dd></div><div><dt>납품 시기</dt><dd>2차 묶음 (9주차 목표)</dd></div><div><dt>비고</dt><dd>메신저 자체 구축. 제외: 음성·영상 통화, 외부 거래처 채널. 제외(계획): 화면 공유, 외부 앱 마켓·공개 API, 오프라인. 모바일 푸시는 C-02(아이폰은 iOS 16.4 이상·홈 화면 추가 시)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-5"><i class="dot d-skel" aria-hidden="true"></i><b>3-5</b>뼈대</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-08" data-item data-status="out" data-stage="범위 제외" data-area="중앙화" data-text="S1-08 회의록 자동 저장, Action Item 추출, 담당자·기한 자동 지정 — (범위 제외, 2026-10-26 결정) 범위 제외 중앙화  2026-10-26 결정: 회의록 자동 작성·정리, 할 일·담당자·기한 지정, 회의록 확인·수정 등 회의록 관련 기능 개발 제외(모바일 포함). 구상 문서 항목은 출처로만 남김 ">
+  <div class="req-h"><span class="req-id">S1-08</span><span class="chip s-na">범위 제외</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>회의록 자동 저장, Action Item 추출, 담당자·기한 자동 지정</h3>
+  <dl><div><dt>검수 기준</dt><dd>— (범위 제외, 2026-10-26 결정)</dd></div><div><dt>납품 시기</dt><dd>범위 제외</dd></div><div><dt>비고</dt><dd>2026-10-26 결정: 회의록 자동 작성·정리, 할 일·담당자·기한 지정, 회의록 확인·수정 등 회의록 관련 기능 개발 제외(모바일 포함). 구상 문서 항목은 출처로만 남김</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-09" data-item data-status="대기" data-stage="2차 묶음" data-area="중앙화" data-text="S1-09 회사 이메일 체계 통합, 필요 시 Gmail 기반 전환 검토 메일 현황 조사, 수요사가 고른 외부 메일 서비스 적용(계정·도메인 정리, 합의 범위의 메일·계정 데이터 이전, 전환·송수신 시험), 결재·업무 알림 메일 연동 전환 2차 묶음 (9주차 목표) 중앙화 K-06 메일은 자체 개발하지 않음. 이용료는 수요사 부담. 기존 그룹웨어 정리는 C-04 3-9">
+  <div class="req-h"><span class="req-id">S1-09</span><span class="chip s-wait">대기</span><span class="pill key">K-06</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>회사 이메일 체계 통합, 필요 시 Gmail 기반 전환 검토</h3>
+  <dl><div><dt>검수 기준</dt><dd>메일 현황 조사, 수요사가 고른 외부 메일 서비스 적용(계정·도메인 정리, 합의 범위의 메일·계정 데이터 이전, 전환·송수신 시험), 결재·업무 알림 메일 연동 전환</dd></div><div><dt>납품 시기</dt><dd>2차 묶음 (9주차 목표)</dd></div><div><dt>비고</dt><dd>메일은 자체 개발하지 않음. 이용료는 수요사 부담. 기존 그룹웨어 정리는 C-04</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-9"><i class="dot d-wait" aria-hidden="true"></i><b>3-9</b>대기</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S1-10" data-item data-status="시작 전" data-stage="2차 묶음" data-area="중앙화" data-text="S1-10 생산 정보와 연계한 전자결재: ERP·회계·법인카드·구매·자금 연결 결재 양식 10종 이내(새 전자결재로 구현). 구매 품의 승인→ERP 발주 가능 전환→발주→입고→세금계산서→지급 예정 중 4주차 말까지 서면 합의한 구간(회계·카드·구매·자금)을 반려·취소·중복·연동 실패까지 추적. ERP 반영이 필요한 건은 담당자 입력 후 누락 자동 대조. 모바일 웹에서 결재함·문서·첨부 보기와 승인·반려·의견 2차 묶음 (9주차 목표) 중앙화 K-03·K-04·K-05 공급자는 ERP에 직접 쓰지 않음. ERP 신규 제작·교체는 이번 범위 밖. 합의 구간 밖은 다음 단계 3-7 3-8">
+  <div class="req-h"><span class="req-id">S1-10</span><span class="chip s-todo">시작 전</span><span class="pill key">K-03</span><span class="pill key">K-04</span><span class="pill key">K-05</span><span class="detail">STEP 1 · 중앙화</span></div>
+  <h3>생산 정보와 연계한 전자결재: ERP·회계·법인카드·구매·자금 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>결재 양식 10종 이내(새 전자결재로 구현). 구매 품의 승인→ERP 발주 가능 전환→발주→입고→세금계산서→지급 예정 중 4주차 말까지 서면 합의한 구간(회계·카드·구매·자금)을 반려·취소·중복·연동 실패까지 추적. ERP 반영이 필요한 건은 담당자 입력 후 누락 자동 대조. 모바일 웹에서 결재함·문서·첨부 보기와 승인·반려·의견</dd></div><div><dt>납품 시기</dt><dd>2차 묶음 (9주차 목표)</dd></div><div><dt>비고</dt><dd>공급자는 ERP에 직접 쓰지 않음. ERP 신규 제작·교체는 이번 범위 밖. 합의 구간 밖은 다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-7"><i class="dot d-todo" aria-hidden="true"></i><b>3-7</b>시작 전</a><a href="roadmap.html#r-3-8"><i class="dot d-todo" aria-hidden="true"></i><b>3-8</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-01" data-item data-status="시작 전" data-stage="3차 묶음" data-area="효율화" data-text="S2-01 반복 입력 및 Excel 작업 자동화 입력→검증→처리 결과 대조, 오류·중복 처리 확인 (자동화 기준 수량 안) 3차 묶음 (12주차 목표) 효율화 K-08·K-09 마감 집계·대사 자동화(A-03 생산 마감 집계, A-09 출고↔매출 대사, A-10 접수↔매입 대사)는 핵심 기능 8. 2차 오픈 묶음에 먼저 연다(제안). A-08 발주 리스트 취합은 자료가 준비되면 2차에 함께 연다. 검수는 최종 3-10 4-1">
+  <div class="req-h"><span class="req-id">S2-01</span><span class="chip s-todo">시작 전</span><span class="pill key">K-08</span><span class="pill key">K-09</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>반복 입력 및 Excel 작업 자동화</h3>
+  <dl><div><dt>검수 기준</dt><dd>입력→검증→처리 결과 대조, 오류·중복 처리 확인 (자동화 기준 수량 안)</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>비고</dt><dd>마감 집계·대사 자동화(A-03 생산 마감 집계, A-09 출고↔매출 대사, A-10 접수↔매입 대사)는 핵심 기능 8. 2차 오픈 묶음에 먼저 연다(제안). A-08 발주 리스트 취합은 자료가 준비되면 2차에 함께 연다. 검수는 최종</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-10"><i class="dot d-todo" aria-hidden="true"></i><b>3-10</b>시작 전</a><a href="roadmap.html#r-4-1"><i class="dot d-todo" aria-hidden="true"></i><b>4-1</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-02" data-item data-status="시작 전" data-stage="3차 묶음" data-area="효율화" data-text="S2-02 부서 간 업무 자동 연결 앞 부서 완료가 다음 부서 업무로 넘어가는지 확인 3차 묶음 (12주차 목표) 효율화 K-09  4-1">
+  <div class="req-h"><span class="req-id">S2-02</span><span class="chip s-todo">시작 전</span><span class="pill key">K-09</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>부서 간 업무 자동 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>앞 부서 완료가 다음 부서 업무로 넘어가는지 확인</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-1"><i class="dot d-todo" aria-hidden="true"></i><b>4-1</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-03" data-item data-status="시작 전" data-stage="3차 묶음" data-area="효율화" data-text="S2-03 승인·완료·지연 자동 알림 수신자·조건·기한, 중복 알림, 실패 이력 시험. 메신저·PC·모바일 웹 푸시 수신과 알림에서 해당 화면 이동 3차 묶음 (12주차 목표) 효율화 K-09  3-4 4-1">
+  <div class="req-h"><span class="req-id">S2-03</span><span class="chip s-todo">시작 전</span><span class="pill key">K-09</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>승인·완료·지연 자동 알림</h3>
+  <dl><div><dt>검수 기준</dt><dd>수신자·조건·기한, 중복 알림, 실패 이력 시험. 메신저·PC·모바일 웹 푸시 수신과 알림에서 해당 화면 이동</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-4"><i class="dot d-todo" aria-hidden="true"></i><b>3-4</b>시작 전</a><a href="roadmap.html#r-4-1"><i class="dot d-todo" aria-hidden="true"></i><b>4-1</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-04" data-item data-status="시작 전" data-stage="3차 묶음" data-area="효율화" data-text="S2-04 보고서·대시보드 자동 생성 경영·영업·생산·재고·품질 5개 이내. 원천 데이터와 집계·기간·필터·권한·갱신 결과 대조, 모바일 웹 조회 3차 묶음 (12주차 목표) 효율화 K-10  4-2">
+  <div class="req-h"><span class="req-id">S2-04</span><span class="chip s-todo">시작 전</span><span class="pill key">K-10</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>보고서·대시보드 자동 생성</h3>
+  <dl><div><dt>검수 기준</dt><dd>경영·영업·생산·재고·품질 5개 이내. 원천 데이터와 집계·기간·필터·권한·갱신 결과 대조, 모바일 웹 조회</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-2"><i class="dot d-todo" aria-hidden="true"></i><b>4-2</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-05" data-item data-status="대기" data-stage="2차 묶음" data-area="효율화" data-text="S2-05 ERP↔영업↔개발↔구매↔생산↔품질↔재무 데이터 연결 합의 구간의 품목·거래처·주문·재고·회계 기준 매핑과 부서별 대조, ERP 연계 대상 항목·갱신 주기·오류 처리 기준, 원천과 연계 결과 대조, 조직·사용자 정보의 ERP 연결(S1-05의 ERP 연결). 기준정보는 BOM·LOT·설비까지 MES·QMS로 확장 가능한 공통 모델 2차 묶음 (9주차 목표) 효율화 K-04 4주 말까지 연결 방식이 합의되지 않으면 내려받은 파일로 2차 오픈, 직접 연결은 6개월차 안 전환 목표 1-5 3-1 3-2 3-3">
+  <div class="req-h"><span class="req-id">S2-05</span><span class="chip s-wait">대기</span><span class="pill key">K-04</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>ERP↔영업↔개발↔구매↔생산↔품질↔재무 데이터 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>합의 구간의 품목·거래처·주문·재고·회계 기준 매핑과 부서별 대조, ERP 연계 대상 항목·갱신 주기·오류 처리 기준, 원천과 연계 결과 대조, 조직·사용자 정보의 ERP 연결(S1-05의 ERP 연결). 기준정보는 BOM·LOT·설비까지 MES·QMS로 확장 가능한 공통 모델</dd></div><div><dt>납품 시기</dt><dd>2차 묶음 (9주차 목표)</dd></div><div><dt>비고</dt><dd>4주 말까지 연결 방식이 합의되지 않으면 내려받은 파일로 2차 오픈, 직접 연결은 6개월차 안 전환 목표</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-1-5"><i class="dot d-todo" aria-hidden="true"></i><b>1-5</b>시작 전</a><a href="roadmap.html#r-3-1"><i class="dot d-todo" aria-hidden="true"></i><b>3-1</b>시작 전</a><a href="roadmap.html#r-3-2"><i class="dot d-wait" aria-hidden="true"></i><b>3-2</b>대기</a><a href="roadmap.html#r-3-3"><i class="dot d-todo" aria-hidden="true"></i><b>3-3</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 4개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S2-06" data-item data-status="시작 전" data-stage="3차 묶음" data-area="효율화" data-text="S2-06 장기적으로 직원들이 바이브 코딩(Vibe Coding)으로 필요한 업무 도구를 직접 만들 수 있도록 교육 및 개발 오픈한 기능의 직원 사용 교육 4회 이상과 관리자 교육, 부서별 주 사용자 업무 자동화 제작 교육·지원(횟수·시간·인원은 확정 명세), 교육 자료·사용 안내서 인도 3차 묶음 (12주차 목표) 효율화  주 사용자 자동화 제작 교육·지원을 범위에 넣어 2026-10-04 '범위 밖' 결정을 대체. 교육은 핵심 기능이 아님 4-8">
+  <div class="req-h"><span class="req-id">S2-06</span><span class="chip s-todo">시작 전</span><span class="detail">STEP 2 · 효율화</span></div>
+  <h3>장기적으로 직원들이 바이브 코딩(Vibe Coding)으로 필요한 업무 도구를 직접 만들 수 있도록 교육 및 개발</h3>
+  <dl><div><dt>검수 기준</dt><dd>오픈한 기능의 직원 사용 교육 4회 이상과 관리자 교육, 부서별 주 사용자 업무 자동화 제작 교육·지원(횟수·시간·인원은 확정 명세), 교육 자료·사용 안내서 인도</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>비고</dt><dd>주 사용자 자동화 제작 교육·지원을 범위에 넣어 2026-10-04 '범위 밖' 결정을 대체. 교육은 핵심 기능이 아님</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-8"><i class="dot d-todo" aria-hidden="true"></i><b>4-8</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="C-01" data-item data-status="대기" data-stage="협의·인계 시점" data-area="공통" data-text="C-01 GPT·Claude·Gemini·OpenRouter AI 연결 API 연결(직접·OpenRouter, 시스템 자동 기능)과 구독 연결(직원의 각 사 기업용 구독에서 AX 데이터 조회)이 모두 동작. 관리자 설정만으로 업무별 모델 변경, 월 사용 한도·알림, 사용자 권한 범위 데이터만 조회(권한 밖 거부 시험), 민감 데이터는 AI 회사 직접 연결, 서면 합의 전 배합·원료 등 민감 정보 외부 전송 차단 시험 확정 명세에서 정함 (제안: API 연결 2차 묶음·구독 연결 3차 묶음) 공통 K-12 AI 사용료·구독료는 수요사 명의. 프롬프트·에이전트 설정·벡터 DB(임베딩)는 인계 산출물(C-05) 3-11 4-4">
+  <div class="req-h"><span class="req-id">C-01</span><span class="chip s-wait">대기</span><span class="pill key">K-12</span><span class="detail">공통 · 공통</span></div>
+  <h3>GPT·Claude·Gemini·OpenRouter AI 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>API 연결(직접·OpenRouter, 시스템 자동 기능)과 구독 연결(직원의 각 사 기업용 구독에서 AX 데이터 조회)이 모두 동작. 관리자 설정만으로 업무별 모델 변경, 월 사용 한도·알림, 사용자 권한 범위 데이터만 조회(권한 밖 거부 시험), 민감 데이터는 AI 회사 직접 연결, 서면 합의 전 배합·원료 등 민감 정보 외부 전송 차단 시험</dd></div><div><dt>납품 시기</dt><dd>확정 명세에서 정함 (제안: API 연결 2차 묶음·구독 연결 3차 묶음)</dd></div><div><dt>비고</dt><dd>AI 사용료·구독료는 수요사 명의. 프롬프트·에이전트 설정·벡터 DB(임베딩)는 인계 산출물(C-05)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-3-11"><i class="dot d-wait" aria-hidden="true"></i><b>3-11</b>대기</a><a href="roadmap.html#r-4-4"><i class="dot d-wait" aria-hidden="true"></i><b>4-4</b>대기</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="C-02" data-item data-status="뼈대" data-stage="협의·인계 시점" data-area="공통" data-text="C-02 모바일 웹과 푸시 알림 앱 설치 없이 모바일 웹, 홈 화면 추가 시 푸시 수신. 결재 승인·반려, 메신저, 문서 검색·열람, 알림, 대시보드 조회를 모바일에서 시험(회의록은 제외) 확정 명세에서 정함 (제안: 화면 셸·푸시 2차 묶음, 기능별 화면은 각 기능 오픈) 공통 K-13  1-3 3-6">
+  <div class="req-h"><span class="req-id">C-02</span><span class="chip s-skel">뼈대</span><span class="pill key">K-13</span><span class="detail">공통 · 공통</span></div>
+  <h3>모바일 웹과 푸시 알림</h3>
+  <dl><div><dt>검수 기준</dt><dd>앱 설치 없이 모바일 웹, 홈 화면 추가 시 푸시 수신. 결재 승인·반려, 메신저, 문서 검색·열람, 알림, 대시보드 조회를 모바일에서 시험(회의록은 제외)</dd></div><div><dt>납품 시기</dt><dd>확정 명세에서 정함 (제안: 화면 셸·푸시 2차 묶음, 기능별 화면은 각 기능 오픈)</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-1-3"><i class="dot d-skel" aria-hidden="true"></i><b>1-3</b>뼈대</a><a href="roadmap.html#r-3-6"><i class="dot d-todo" aria-hidden="true"></i><b>3-6</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 2개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="C-03" data-item data-status="시작 전" data-stage="3차 묶음" data-area="공통" data-text="C-03 대표·임원 전용 AX 기능 3건: 경영 현황판·AI 보고서·의사결정 지원 확정 명세에서 정한 범위. 숫자는 승인 산식·DB 계산, AI는 해석·초안과 근거 표시, 대표·임원 권한만 열람 3차 묶음 (12주차 목표) 공통  핵심 기능 아님 4-5">
+  <div class="req-h"><span class="req-id">C-03</span><span class="chip s-todo">시작 전</span><span class="detail">공통 · 공통</span></div>
+  <h3>대표·임원 전용 AX 기능 3건: 경영 현황판·AI 보고서·의사결정 지원</h3>
+  <dl><div><dt>검수 기준</dt><dd>확정 명세에서 정한 범위. 숫자는 승인 산식·DB 계산, AI는 해석·초안과 근거 표시, 대표·임원 권한만 열람</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표)</dd></div><div><dt>비고</dt><dd>핵심 기능 아님</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-5"><i class="dot d-todo" aria-hidden="true"></i><b>4-5</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="C-04" data-item data-status="대기" data-stage="3차 묶음" data-area="공통" data-text="C-04 기존 그룹웨어 정리와 데이터 이관 ERP 전표 결재 연결 경로 확인과 새 전자결재로 이전, 정리 시기·방법 서면 합의, 합의 범위의 그룹웨어 데이터 이관과 수량·누락 대조 3차 묶음 (12주차 목표). 정리 시점은 합의 공통   4-6">
+  <div class="req-h"><span class="req-id">C-04</span><span class="chip s-wait">대기</span><span class="detail">공통 · 공통</span></div>
+  <h3>기존 그룹웨어 정리와 데이터 이관</h3>
+  <dl><div><dt>검수 기준</dt><dd>ERP 전표 결재 연결 경로 확인과 새 전자결재로 이전, 정리 시기·방법 서면 합의, 합의 범위의 그룹웨어 데이터 이관과 수량·누락 대조</dd></div><div><dt>납품 시기</dt><dd>3차 묶음 (12주차 목표). 정리 시점은 합의</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-4-6"><i class="dot d-wait" aria-hidden="true"></i><b>4-6</b>대기</a></div><p class="detail" style="margin-top:6px">연결 1개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="C-05" data-item data-status="대기" data-stage="협의·인계 시점" data-area="공통" data-text="C-05 클라우드·데이터베이스 구성과 인계 산출물 수요사 명의 AWS와 임원·팀장·사원별 권한, 인사 정보 DB 분리와 접근 통제·이력, 백업·복구 정책과 복구 훈련 기록, 클라우드·DB 구성도·권한표·운영 매뉴얼, 설계 산출물(아키텍처 설계서·데이터 사전(ERD·테이블 정의)·내부·외부 API 명세서·배포·운영 절차서), 소스코드·설정·DB·백업, 공급사 기존 자산 소스코드·제3자 소프트웨어 목록 인계 최종 검수 요청 때까지 인계. 후속 지원 종료 때 변경분 재인계 공통  클라우드 구성·인계는 핵심 기능 아님 0-4 1-4 4-9 4-10">
+  <div class="req-h"><span class="req-id">C-05</span><span class="chip s-wait">대기</span><span class="detail">공통 · 공통</span></div>
+  <h3>클라우드·데이터베이스 구성과 인계 산출물</h3>
+  <dl><div><dt>검수 기준</dt><dd>수요사 명의 AWS와 임원·팀장·사원별 권한, 인사 정보 DB 분리와 접근 통제·이력, 백업·복구 정책과 복구 훈련 기록, 클라우드·DB 구성도·권한표·운영 매뉴얼, 설계 산출물(아키텍처 설계서·데이터 사전(ERD·테이블 정의)·내부·외부 API 명세서·배포·운영 절차서), 소스코드·설정·DB·백업, 공급사 기존 자산 소스코드·제3자 소프트웨어 목록 인계</dd></div><div><dt>납품 시기</dt><dd>최종 검수 요청 때까지 인계. 후속 지원 종료 때 변경분 재인계</dd></div><div><dt>비고</dt><dd>클라우드 구성·인계는 핵심 기능 아님</dd></div><div><dt>연결된 로드맵 항목</dt><dd><div class="linked"><a href="roadmap.html#r-0-4"><i class="dot d-wait" aria-hidden="true"></i><b>0-4</b>대기</a><a href="roadmap.html#r-1-4"><i class="dot d-todo" aria-hidden="true"></i><b>1-4</b>시작 전</a><a href="roadmap.html#r-4-9"><i class="dot d-todo" aria-hidden="true"></i><b>4-9</b>시작 전</a><a href="roadmap.html#r-4-10"><i class="dot d-todo" aria-hidden="true"></i><b>4-10</b>시작 전</a></div><p class="detail" style="margin-top:6px">연결 4개 중 완료 0개</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-01" data-item data-status="out" data-stage="다음 단계" data-area="AI · 영업" data-text="S3-01 고객별 매출 분석 / 이탈 가능 고객 탐지 / 재주문 추천 / 견적 후속 관리 영역 평가표 통과, 원장 대조, 근거 표시 다음 단계 AI · 영업   ">
+  <div class="req-h"><span class="req-id">S3-01</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 영업</span></div>
+  <h3>고객별 매출 분석 / 이탈 가능 고객 탐지 / 재주문 추천 / 견적 후속 관리</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 원장 대조, 근거 표시</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-02" data-item data-status="out" data-stage="다음 단계" data-area="AI · 개발" data-text="S3-02 견적 초안 / 배합·원료 검색 / 과거 제품 검색 / 시장조사 영역 평가표 통과, 근거 표시, 책임자 확인 다음 단계 AI · 개발   ">
+  <div class="req-h"><span class="req-id">S3-02</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 개발</span></div>
+  <h3>견적 초안 / 배합·원료 검색 / 과거 제품 검색 / 시장조사</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 근거 표시, 책임자 확인</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-03" data-item data-status="out" data-stage="다음 단계" data-area="AI · 구매" data-text="S3-03 발주 필요량 추천 / 안전재고 / 원료 가격 비교 / 유통기한 임박 원료 탐지 영역 평가표 통과, 과거 데이터 비교 다음 단계 AI · 구매   ">
+  <div class="req-h"><span class="req-id">S3-03</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 구매</span></div>
+  <h3>발주 필요량 추천 / 안전재고 / 원료 가격 비교 / 유통기한 임박 원료 탐지</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 과거 데이터 비교</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-04" data-item data-status="out" data-stage="다음 단계" data-area="AI · 생산관리" data-text="S3-04 생산 스케줄 추천 / 라인 배정 / 병목 예측 / CAPA 분석 영역 평가표 통과, 과거 데이터 비교 다음 단계 AI · 생산관리   ">
+  <div class="req-h"><span class="req-id">S3-04</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 생산관리</span></div>
+  <h3>생산 스케줄 추천 / 라인 배정 / 병목 예측 / CAPA 분석</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 과거 데이터 비교</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-05" data-item data-status="out" data-stage="다음 단계" data-area="AI · 생산" data-text="S3-05 생산성·수율·Downtime 분석 / 이상 징후 탐지 영역 평가표 통과, 원장 대조 다음 단계 AI · 생산   ">
+  <div class="req-h"><span class="req-id">S3-05</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 생산</span></div>
+  <h3>생산성·수율·Downtime 분석 / 이상 징후 탐지</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 원장 대조</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-06" data-item data-status="out" data-stage="다음 단계" data-area="AI · 품질" data-text="S3-06 시험 결과 추적 / 이상 추세 분석 / VOC·클레임 분석 영역 평가표 통과, 품질 판정은 책임자 확인 다음 단계 AI · 품질   ">
+  <div class="req-h"><span class="req-id">S3-06</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 품질</span></div>
+  <h3>시험 결과 추적 / 이상 추세 분석 / VOC·클레임 분석</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 품질 판정은 책임자 확인</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-07" data-item data-status="out" data-stage="다음 단계" data-area="AI · 물류" data-text="S3-07 출하 계획 / 재고 / 적정 재고 / 유통기한 관리 영역 평가표 통과, 원장 대조 다음 단계 AI · 물류   ">
+  <div class="req-h"><span class="req-id">S3-07</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 물류</span></div>
+  <h3>출하 계획 / 재고 / 적정 재고 / 유통기한 관리</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 원장 대조</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-08" data-item data-status="out" data-stage="다음 단계" data-area="AI · 재무" data-text="S3-08 Cash Flow 예상 / 지급 계획 / 예산 대비 실적 / 원가·마진 분석 영역 평가표 통과, 금액은 승인 산식·DB 계산 다음 단계 AI · 재무   ">
+  <div class="req-h"><span class="req-id">S3-08</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 재무</span></div>
+  <h3>Cash Flow 예상 / 지급 계획 / 예산 대비 실적 / 원가·마진 분석</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 금액은 승인 산식·DB 계산</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S3-09" data-item data-status="out" data-stage="다음 단계" data-area="AI · 손익" data-text="S3-09 매출·이익·CAPA·현금·재고·수주 통합 분석 영역 평가표 통과, 기준 데이터 일치 다음 단계 AI · 손익   ">
+  <div class="req-h"><span class="req-id">S3-09</span><span class="chip s-na">로드맵</span><span class="detail">STEP 3 · AI · 손익</span></div>
+  <h3>매출·이익·CAPA·현금·재고·수주 통합 분석</h3>
+  <dl><div><dt>검수 기준</dt><dd>영역 평가표 통과, 기준 데이터 일치</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S4-01" data-item data-status="out" data-stage="다음 단계" data-area="공장 연결" data-text="S4-01 생산설비·라인 데이터 연결 설비·라인 ID, 수집 항목, 통신 방식·주기, 시각 동기화, 단절 감지 다음 단계 공장 연결   ">
+  <div class="req-h"><span class="req-id">S4-01</span><span class="chip s-na">로드맵</span><span class="detail">STEP 4 · 공장 연결</span></div>
+  <h3>생산설비·라인 데이터 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>설비·라인 ID, 수집 항목, 통신 방식·주기, 시각 동기화, 단절 감지</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S4-02" data-item data-status="out" data-stage="다음 단계" data-area="공장 연결" data-text="S4-02 가동률·OEE·수율·불량·Downtime 실시간 수집 지표 산식·계획 시간·양품/불량·사유 매핑, 현장 수치 대조 다음 단계 공장 연결   ">
+  <div class="req-h"><span class="req-id">S4-02</span><span class="chip s-na">로드맵</span><span class="detail">STEP 4 · 공장 연결</span></div>
+  <h3>가동률·OEE·수율·불량·Downtime 실시간 수집</h3>
+  <dl><div><dt>검수 기준</dt><dd>지표 산식·계획 시간·양품/불량·사유 매핑, 현장 수치 대조</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S4-03" data-item data-status="out" data-stage="다음 단계" data-area="공장 연결" data-text="S4-03 원료→생산→포장→출하 추적 원료·반제품·완제품 LOT 정방향·역방향 이력 조회 다음 단계 공장 연결   ">
+  <div class="req-h"><span class="req-id">S4-03</span><span class="chip s-na">로드맵</span><span class="detail">STEP 4 · 공장 연결</span></div>
+  <h3>원료→생산→포장→출하 추적</h3>
+  <dl><div><dt>검수 기준</dt><dd>원료·반제품·완제품 LOT 정방향·역방향 이력 조회</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S4-04" data-item data-status="out" data-stage="다음 단계" data-area="공장 연결" data-text="S4-04 실시간 재고 및 제조원가 파악 수불·공정 투입·산출·실적과 원가 기준 연결, 갱신·대조 다음 단계 공장 연결   ">
+  <div class="req-h"><span class="req-id">S4-04</span><span class="chip s-na">로드맵</span><span class="detail">STEP 4 · 공장 연결</span></div>
+  <h3>실시간 재고 및 제조원가 파악</h3>
+  <dl><div><dt>검수 기준</dt><dd>수불·공정 투입·산출·실적과 원가 기준 연결, 갱신·대조</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S5-01" data-item data-status="out" data-stage="다음 단계" data-area="의사결정" data-text="S5-01 수주·납기·원료·재고·CAPA·인력·설비·원가·마진 계산 데이터 누락·제약 위반 검증, 계산 근거·가정 확인 다음 단계 의사결정   ">
+  <div class="req-h"><span class="req-id">S5-01</span><span class="chip s-na">로드맵</span><span class="detail">STEP 5 · 의사결정</span></div>
+  <h3>수주·납기·원료·재고·CAPA·인력·설비·원가·마진 계산</h3>
+  <dl><div><dt>검수 기준</dt><dd>데이터 누락·제약 위반 검증, 계산 근거·가정 확인</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S5-02" data-item data-status="out" data-stage="다음 단계" data-area="의사결정" data-text="S5-02 최적 생산일정·구매량·라인 배정·주문 우선순위 제안 최적화 목표·제약 조건·대안 비교, 결과와 한계 표시 다음 단계 의사결정   ">
+  <div class="req-h"><span class="req-id">S5-02</span><span class="chip s-na">로드맵</span><span class="detail">STEP 5 · 의사결정</span></div>
+  <h3>최적 생산일정·구매량·라인 배정·주문 우선순위 제안</h3>
+  <dl><div><dt>검수 기준</dt><dd>최적화 목표·제약 조건·대안 비교, 결과와 한계 표시</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S5-03" data-item data-status="out" data-stage="다음 단계" data-area="의사결정" data-text="S5-03 AI 제안→사람 승인→자동 실행 승인권·실행 범위, 중복 방지, 실패·취소, 감사 기록 시험. PLC·장비 직접 제어 없음 다음 단계 의사결정   ">
+  <div class="req-h"><span class="req-id">S5-03</span><span class="chip s-na">로드맵</span><span class="detail">STEP 5 · 의사결정</span></div>
+  <h3>AI 제안→사람 승인→자동 실행</h3>
+  <dl><div><dt>검수 기준</dt><dd>승인권·실행 범위, 중복 방지, 실패·취소, 감사 기록 시험. PLC·장비 직접 제어 없음</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S6-01" data-item data-status="out" data-stage="다음 단계" data-area="다공장" data-text="S6-01 1공장·2공장 및 향후 외부·해외 공장 연결 공장 등록·권한, 연결 규격, 표준 데이터 모델, 확장 절차 다음 단계 다공장   ">
+  <div class="req-h"><span class="req-id">S6-01</span><span class="chip s-na">로드맵</span><span class="detail">STEP 6 · 다공장</span></div>
+  <h3>1공장·2공장 및 향후 외부·해외 공장 연결</h3>
+  <dl><div><dt>검수 기준</dt><dd>공장 등록·권한, 연결 규격, 표준 데이터 모델, 확장 절차</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S6-02" data-item data-status="out" data-stage="다음 단계" data-area="다공장" data-text="S6-02 한 화면에서 수주·생산·CAPA·품질·재고·원가·이익 자동 관리 공장별·통합 보기, 단위·기준일 일치, 권한 격리 다음 단계 다공장   ">
+  <div class="req-h"><span class="req-id">S6-02</span><span class="chip s-na">로드맵</span><span class="detail">STEP 6 · 다공장</span></div>
+  <h3>한 화면에서 수주·생산·CAPA·품질·재고·원가·이익 자동 관리</h3>
+  <dl><div><dt>검수 기준</dt><dd>공장별·통합 보기, 단위·기준일 일치, 권한 격리</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article>
+<article class="card req" id="S6-03" data-item data-status="out" data-stage="다음 단계" data-area="다공장" data-text="S6-03 AI가 공장 간 생산 물량까지 최적 배분 공장별 가용량·납기·원가·물류 제약을 반영한 배분안과 승인 다음 단계 다공장   ">
+  <div class="req-h"><span class="req-id">S6-03</span><span class="chip s-na">로드맵</span><span class="detail">STEP 6 · 다공장</span></div>
+  <h3>AI가 공장 간 생산 물량까지 최적 배분</h3>
+  <dl><div><dt>검수 기준</dt><dd>공장별 가용량·납기·원가·물류 제약을 반영한 배분안과 승인</dd></div><div><dt>납품 시기</dt><dd>다음 단계</dd></div><div><dt>연결된 로드맵 항목</dt><dd><p class="detail">연결된 로드맵 항목 없음</p></dd></div></dl>
+</article></div></div>
+</main>
+<footer class="foot"><span>생성 <b>2026-10-27 17:19</b> KST</span><span>소스 커밋 <b class="mono">b58178e</b> (+미커밋 변경) · 브랜치 test</span><span>저장소 문서에서 자동 생성한 읽기 전용 요약본이다. 정본은 문서다.</span></footer>
+<script src="assets/app.js" defer></script>
+</body>
+</html>

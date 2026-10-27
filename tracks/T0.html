@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>T0 공통 기반 · YUYU 구축 진행 현황</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<header class="top"><div class="top-in"><a class="brand" href="../index.html"><i></i>YUYU Healthcare <small>구축 진행</small></a><nav class="nav" aria-label="주 메뉴"><a href="../index.html">개요</a><a href="../roadmap.html">로드맵</a><a href="../requirements.html">요구사항</a><a href="../tracks/index.html" aria-current="page">트랙</a><a href="../homepage.html">홈페이지 상세</a><a href="../commits.html">최근 작업</a></nav></div></header>
+<main>
+<section><p class="eyebrow"><a href="index.html">트랙</a> / T0</p><h1>공통 기반</h1><p class="lead">T0 트랙 · 로드맵 항목 10개</p></section>
+<section class="sec"><header><h2>지금</h2></header><div class="card facts"><dl class="facts"><div><dt>현재</dt><dd>ADR-0002 제안, apps/workspace 뼈대(자체 계정 로그인·조직·감사 기록)</dd></div><div><dt>다음 할 일</dt><dd>착수 산출물 아키텍처 설계서, 고객 명의 계정, 아키텍처.md·권한.md v1(인사 정보 DB 분리 포함)</dd></div><div><dt>맡은 검수 ID</dt><dd class="linked"><a class="pill" href="../requirements.html#S1-05">S1-05 · 뼈대</a> <a class="pill" href="../requirements.html#S2-05">S2-05 · 대기</a> <a class="pill" href="../requirements.html#C-02">C-02 · 뼈대</a> <a class="pill" href="../requirements.html#C-05">C-05 · 대기</a></dd></div></dl></div></section>
+<section class="sec"><header><h2>진행</h2><p>항목별 상태</p></header><div class="card" style="margin-bottom:14px"><div class="bar " role="img" aria-label="뼈대 2, 시작 전 8"><i class="f-skel" style="width:20.00%"></i><i class="f-todo" style="width:80.00%"></i></div><div class="legend"><span><i class="f-skel"></i>뼈대 <b>2</b></span><span><i class="f-todo"></i>시작 전 <b>8</b></span></div></div><div class="grid"><article class="item" id="r-1-2" data-item data-status="뼈대" data-track="T0" data-stage="1" data-text="1-2 조직·역할·사용자(I-1), 권한·민감도 판정(I-2), 감사 기록(I-7) 조직도·사용자 목록, 인사·전산 확인 허용·거부 시험 통과 S1-05 T0 뼈대 뼈대">
+  <span class="id">1-2</span>
+  <div>
+    <div class="head"><span class="chip s-skel">뼈대</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#S1-05">S1-05</a></div>
+    <div class="title">조직·역할·사용자(I-1), 권한·민감도 판정(I-2), 감사 기록(I-7)</div>
+    <p class="detail">packages/core</p>
+    <dl><div><dt>먼저 필요한 것</dt><dd>조직도·사용자 목록, 인사·전산 확인</dd></div><div><dt>끝난 기준</dt><dd>허용·거부 시험 통과</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-1-3" data-item data-status="뼈대" data-track="T0" data-stage="1" data-text="1-3 업무 화면 틀: 로그인·메뉴·관리자 2단계 인증·모바일 레이아웃(I-8) 1-2 work. 시험 환경 로그인 S1-05, C-02 T0 뼈대 뼈대">
+  <span class="id">1-3</span>
+  <div>
+    <div class="head"><span class="chip s-skel">뼈대</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#S1-05">S1-05</a><a class="pill" href="../requirements.html#C-02">C-02</a></div>
+    <div class="title">업무 화면 틀: 로그인·메뉴·관리자 2단계 인증·모바일 레이아웃(I-8)</div>
+    <p class="detail">apps/workspace</p>
+    <dl><div><dt>먼저 필요한 것</dt><dd>1-2</dd></div><div><dt>끝난 기준</dt><dd>work. 시험 환경 로그인</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-1-4" data-item data-status="시작 전" data-track="T0" data-stage="1" data-text="1-4 인사 정보 DB 분리, AWS 직급별 권한 0-4 분리 DB 접근 통제·이력 시험 C-05 T0 시작 전 시작 전">
+  <span class="id">1-4</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#C-05">C-05</a></div>
+    <div class="title">인사 정보 DB 분리, AWS 직급별 권한</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>0-4</dd></div><div><dt>끝난 기준</dt><dd>분리 DB 접근 통제·이력 시험</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-1-5" data-item data-status="시작 전" data-track="T0" data-stage="1" data-text="1-5 기준 데이터 키 v1(I-3): 품목·거래처·BOM·LOT·설비·창고·조직 받은 ERP 내보내기 데이터모델.md v1 S2-05 T0 시작 전 시작 전">
+  <span class="id">1-5</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#S2-05">S2-05</a></div>
+    <div class="title">기준 데이터 키 v1(I-3): 품목·거래처·BOM·LOT·설비·창고·조직</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>받은 ERP 내보내기</dd></div><div><dt>끝난 기준</dt><dd>데이터모델.md v1</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-2-6" data-item data-status="시작 전" data-track="T0" data-stage="2" data-text="2-6 1차 보안 취약점 점검(홈페이지 웹 점검 포함)·조치 2-1~2-5 점검 결과·조치 내역 — T0 시작 전 시작 전">
+  <span class="id">2-6</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a></div>
+    <div class="title">1차 보안 취약점 점검(홈페이지 웹 점검 포함)·조치</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>2-1~2-5</dd></div><div><dt>끝난 기준</dt><dd>점검 결과·조치 내역</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-3-6" data-item data-status="시작 전" data-track="T0" data-stage="3" data-text="3-6 모바일 홈 화면 추가·웹 푸시 1-3, 3-4 iOS·Android 푸시 수신 C-02 (K-13) T0 시작 전 시작 전">
+  <span class="id">3-6</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#C-02">C-02</a></div>
+    <div class="title">모바일 홈 화면 추가·웹 푸시</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>1-3, 3-4</dd></div><div><dt>끝난 기준</dt><dd>iOS·Android 푸시 수신</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-3-12" data-item data-status="시작 전" data-track="T0" data-stage="3" data-text="3-12 2차 보안 점검·조치, 결재·ERP 시연 3-5~3-11 점검 결과 — T0 시작 전 시작 전">
+  <span class="id">3-12</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a></div>
+    <div class="title">2차 보안 점검·조치, 결재·ERP 시연</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>3-5~3-11</dd></div><div><dt>끝난 기준</dt><dd>점검 결과</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-4-9" data-item data-status="시작 전" data-track="T0" data-stage="4" data-text="4-9 백업·복구 훈련, 고객 계정 배포 재현 0-4 훈련 기록 C-05 T0 시작 전 시작 전">
+  <span class="id">4-9</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#C-05">C-05</a></div>
+    <div class="title">백업·복구 훈련, 고객 계정 배포 재현</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>0-4</dd></div><div><dt>끝난 기준</dt><dd>훈련 기록</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-4-10" data-item data-status="시작 전" data-track="T0" data-stage="4" data-text="4-10 설계 산출물(아키텍처·데이터 사전·API 명세·배포 운영), 제3자 소프트웨어 목록, 인계 묶음(최종 검수 요청 때까지) 4-1~4-9 인계 수령 확인 C-05 T0 시작 전 시작 전">
+  <span class="id">4-10</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a><a class="pill" href="../requirements.html#C-05">C-05</a></div>
+    <div class="title">설계 산출물(아키텍처·데이터 사전·API 명세·배포 운영), 제3자 소프트웨어 목록, 인계 묶음(최종 검수 요청 때까지)</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>4-1~4-9</dd></div><div><dt>끝난 기준</dt><dd>인계 수령 확인</dd></div></dl>
+  </div>
+</article>
+<article class="item" id="r-4-11" data-item data-status="시작 전" data-track="T0" data-stage="4" data-text="4-11 3차 보안 점검·조치 4-1~4-10 점검 결과 — T0 시작 전 시작 전">
+  <span class="id">4-11</span>
+  <div>
+    <div class="head"><span class="chip s-todo">시작 전</span><a class="pill" href="../tracks/T0.html">T0</a></div>
+    <div class="title">3차 보안 점검·조치</div>
+    
+    <dl><div><dt>먼저 필요한 것</dt><dd>4-1~4-10</dd></div><div><dt>끝난 기준</dt><dd>점검 결과</dd></div></dl>
+  </div>
+</article></div></section>
+<section class="sec"><header><h2>작업별 주차</h2><p>착수 주 = 1주. 현재 0주</p></header><div class="card grid" style="gap:14px"><div><div class="week-axis" aria-hidden="true"><span class="cur">0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span></div></div><ul class="grid" style="gap:14px"><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">고객 명의 계정·환경 요청·발급</b><span class="detail">0~2 · C-05</span></div><div class="week-grid" role="img" aria-label="0주~2주"><i class="on cur"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">담당자 인터뷰 인사·전산(조직·겸직)</b><span class="detail">2 초 · S1-05</span></div><div class="week-grid" role="img" aria-label="2주~2주"><i class=" cur"></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">기술 스택 ADR 승인(확정 명세에 명시)</b><span class="detail">2</span></div><div class="week-grid" role="img" aria-label="2주~2주"><i class=" cur"></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">조직·권한·기준 데이터 키·감사 기록 v1</b><span class="detail">2~3 · S1-05, S2-05</span></div><div class="week-grid" role="img" aria-label="2주~3주"><i class=" cur"></i><i class=""></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">AWS 권한(임원·팀장·사원), 인사 정보 DB 분리·접근 이력</b><span class="detail">3~5 · C-05</span></div><div class="week-grid" role="img" aria-label="3주~5주"><i class=" cur"></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">권한 허용·거부 시험</b><span class="detail">5 · S1-05</span></div><div class="week-grid" role="img" aria-label="5주~5주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">홈페이지 관리 화면을 업무 앱(/site)에 올리고 업무 세션으로 인증(ADR-0006)</b><span class="detail">4~5 (홈페이지 공개 HP-12 전) · H-01, S1-05</span></div><div class="week-grid" role="img" aria-label="4주~5주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">오픈별 보안 취약점 점검·조치</b><span class="detail">5, 8, 11 · 전체</span></div><div class="week-grid" role="img" aria-label="5주~11주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">모바일 웹 셸·홈 화면 추가·웹 푸시</b><span class="detail">6~7 · C-02</span></div><div class="week-grid" role="img" aria-label="6주~7주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">연동 공통 적재·재시도·대조</b><span class="detail">6~8 · S2-05</span></div><div class="week-grid" role="img" aria-label="6주~8주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">설계 산출물(데이터 사전·API 명세서·배포·운영 절차서)·구성도 정리</b><span class="detail">10~12 · C-05</span></div><div class="week-grid" role="img" aria-label="10주~12주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li><li><div style="display:flex;flex-wrap:wrap;gap:4px 12px;justify-content:space-between"><b style="font-weight:600">백업·복구 훈련·배포 재현</b><span class="detail">11 · C-05</span></div><div class="week-grid" role="img" aria-label="11주~11주"><i class=" cur"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i></div></li></ul></div></section>
+</main>
+<footer class="foot"><span>생성 <b>2026-10-27 17:19</b> KST</span><span>소스 커밋 <b class="mono">b58178e</b> (+미커밋 변경) · 브랜치 test</span><span>저장소 문서에서 자동 생성한 읽기 전용 요약본이다. 정본은 문서다.</span></footer>
+<script src="../assets/app.js" defer></script>
+</body>
+</html>
