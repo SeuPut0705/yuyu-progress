@@ -1,40 +1,28 @@
 (() => {
-  const root = document.querySelector('[data-filterable]');
-  if (!root) return;
-  const controls = [...root.querySelectorAll('[data-f]')];
-  const items = [...root.querySelectorAll('[data-item]')];
-  const groups = [...root.querySelectorAll('[data-group]')];
-  const count = root.querySelector('[data-count]');
-  const empty = root.querySelector('[data-empty]');
-  const params = new URLSearchParams(location.search);
-
-  for (const c of controls) {
-    const v = params.get(c.dataset.f);
-    if (v !== null) c.value = v;
-  }
+  const input = document.querySelector('[data-f="q"]');
+  const items = [...document.querySelectorAll('[data-item]')];
+  const groups = [...document.querySelectorAll('[data-group]')];
+  const count = document.querySelector('[data-count]');
+  const empty = document.querySelector('[data-empty]');
+  if (!input) return;
 
   const apply = () => {
-    const want = Object.fromEntries(controls.map((c) => [c.dataset.f, c.dataset.f === 'q' ? c.value.trim().toLowerCase() : c.value]));
+    const q = input.value.trim().toLowerCase();
     let shown = 0;
     for (const el of items) {
-      const ok =
-        (!want.status || el.dataset.status === want.status) &&
-        (!want.track || el.dataset.track === want.track) &&
-        (!want.stage || el.dataset.stage === want.stage) &&
-        (!want.area || el.dataset.area === want.area) &&
-        (!want.q || el.dataset.text.toLowerCase().includes(want.q));
+      const ok = !q || el.dataset.text.toLowerCase().includes(q);
       el.hidden = !ok;
       if (ok) shown++;
     }
     for (const g of groups) g.hidden = !g.querySelector('[data-item]:not([hidden])');
-    if (count) count.textContent = `${shown} / ${items.length}개 표시`;
-    if (empty) empty.hidden = shown !== 0;
-    const next = new URLSearchParams();
-    for (const c of controls) if (c.value) next.set(c.dataset.f, c.value);
-    const qs = next.toString();
-    history.replaceState(null, '', `${location.pathname}${qs ? `?${qs}` : ''}${location.hash}`);
+    count.textContent = q ? `${shown} / ${items.length}개 표시` : '';
+    empty.hidden = shown !== 0;
+    const url = new URL(location.href);
+    if (q) url.searchParams.set('q', input.value.trim()); else url.searchParams.delete('q');
+    history.replaceState(null, '', url);
   };
 
-  for (const c of controls) c.addEventListener(c.tagName === 'INPUT' ? 'input' : 'change', apply);
+  input.value = new URLSearchParams(location.search).get('q') ?? '';
+  input.addEventListener('input', apply);
   apply();
 })();
