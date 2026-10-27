@@ -191,7 +191,7 @@ td.num, th.num { text-align: right; }
 .item.open { border-color: var(--line-strong); border-left: 4px solid var(--forest); }
 @media (prefers-color-scheme: dark) { .item.open { border-left-color: var(--brand-ink); } }
 .item:target { outline: 2px solid var(--brand); outline-offset: 2px; }
-.item .id { font-family: var(--mono); font-weight: 650; color: var(--ink-2); padding-top: 2px; min-width: 3ch; }
+.item .id { font-family: var(--mono); font-weight: 650; color: var(--ink-2); padding-top: 2px; min-width: 4.5ch; }
 .item .title { font-weight: 600; }
 .item .head { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; margin-bottom: 6px; }
 .item dl { display: grid; gap: 6px 14px; margin: 8px 0 0; font-size: 0.875rem; color: var(--ink-2); grid-template-columns: minmax(0, 1fr); }
