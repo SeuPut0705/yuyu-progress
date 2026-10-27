@@ -81,9 +81,10 @@ summary { cursor: pointer; color: var(--ink-3); font-size: 0.8125rem; font-weigh
 summary:hover { color: var(--ink-2); }
 details p { color: var(--ink-2); font-size: 0.875rem; padding: 2px 0 6px; }
 @media (max-width: 520px) {
-  .row { flex-wrap: wrap; row-gap: 4px; }
-  .id { width: auto; }
-  .name { flex-basis: calc(100% - 4em); }
+  .row { flex-wrap: wrap; row-gap: 2px; align-items: center; }
+  .id { width: auto; order: 1; }
+  .row .chip { order: 2; margin-left: auto; }
+  .name { order: 3; flex-basis: 100%; }
   details { margin-left: 0; }
 }
 
