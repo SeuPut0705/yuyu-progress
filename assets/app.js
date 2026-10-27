@@ -14,7 +14,7 @@
   }
 
   const apply = () => {
-    const want = Object.fromEntries(controls.map((c) => [c.dataset.f, c.value.trim().toLowerCase()]));
+    const want = Object.fromEntries(controls.map((c) => [c.dataset.f, c.dataset.f === 'q' ? c.value.trim().toLowerCase() : c.value]));
     let shown = 0;
     for (const el of items) {
       const ok =
