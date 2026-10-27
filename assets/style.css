@@ -117,7 +117,16 @@ h2 { font-size: var(--t20); font-weight: 700; line-height: 1.3; letter-spacing: 
 .card-h { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 16px; }
 .card-h h2 { font-size: var(--t16); }
 
-.tiles { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+.tiles { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.tile.wide { grid-column: 1 / -1; }
+.t-start { order: 1; }
+.t-now { order: 2; }
+.t-last { order: 3; }
+@media (min-width: 720px) {
+  .tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .tile.t-now { grid-column: auto; order: 0; }
+  .t-start { order: 0; }
+}
 .tile { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); padding: 16px; display: grid; gap: 4px; align-content: start; min-width: 0; }
 .tile-l { font-size: var(--t12); font-weight: 650; color: var(--ink-3); }
 .tile-v { font-size: var(--t28); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; }
@@ -162,7 +171,8 @@ h2 { font-size: var(--t20); font-weight: 700; line-height: 1.3; letter-spacing: 
 .q-x { font-size: var(--t13); color: var(--ink-3); }
 
 /* toolbar */
-.toolbar { position: sticky; top: var(--top-h); z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 -16px; padding: 12px 16px; background: var(--bg); border-bottom: 1px solid var(--line); }
+.toolbar { position: static; z-index: 10; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin: 0 -16px; padding: 12px 16px; background: var(--bg); border-bottom: 1px solid var(--line); }
+@media (min-width: 720px) { .toolbar { position: sticky; top: var(--top-h); } }
 @media (min-width: 1024px) { .toolbar { top: 0; margin: 0 -32px; padding: 12px 32px; } }
 .fchips { display: flex; flex-wrap: wrap; gap: 8px; }
 .fchip { font: inherit; font-size: var(--t13); font-weight: 600; display: inline-flex; align-items: center; gap: 8px; min-height: 32px; padding: 0 12px; border-radius: 999px; border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink-2); cursor: pointer; }
@@ -198,8 +208,13 @@ h2 { font-size: var(--t20); font-weight: 700; line-height: 1.3; letter-spacing: 
 .c-next { grid-area: next; color: var(--ink-2); font-size: var(--t13); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .c-next::before { content: '다음 할 일 · '; color: var(--ink-3); }
 .c-track { grid-area: track; display: flex; flex-wrap: wrap; gap: 4px 8px; font-size: var(--t13); color: var(--ink-2); }
+.tk-wrap { display: grid; gap: 4px; justify-items: start; min-width: 0; }
+.tk-name { font-size: var(--t12); color: var(--ink-3); }
 .tk { font-family: var(--mono); font-size: var(--t12); font-weight: 650; background: var(--surface-2); color: var(--ink-2); border-radius: 6px; padding: 0 8px; }
 .r[open] .tk, .r summary:hover .tk { background: var(--bg); }
+.c-track { gap: 8px; }
+@media (max-width: 1439px) and (min-width: 720px) { .tk-name { display: none; } }
+@media (max-width: 719px) { .tk-wrap { display: flex; align-items: center; gap: 8px; } }
 .panel { padding: 0 16px 16px; }
 .panel dl { display: grid; gap: 16px; border-top: 1px solid var(--line); padding-top: 16px; }
 .panel dt { font-size: var(--t12); font-weight: 650; color: var(--ink-3); margin-bottom: 2px; }
@@ -211,14 +226,11 @@ h2 { font-size: var(--t20); font-weight: 700; line-height: 1.3; letter-spacing: 
   .r summary > * { grid-area: auto; }
   .c-status { justify-self: start; }
   .c-next::before { content: none; }
-  .tk-name { display: none; }
   .panel { padding: 0 16px 16px 112px; }
 }
 @media (min-width: 1440px) {
   .thead, .r summary { grid-template-columns: 80px minmax(0, 1fr) 88px 200px 148px; }
-  .tk-name { display: inline; }
-  .tk { white-space: nowrap; }
-  .c-track { display: grid; gap: 4px; justify-items: start; }
+  .tk-name { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
   .thead, .r summary { grid-template-columns: 80px minmax(0, 1fr) 88px 200px 56px; }
