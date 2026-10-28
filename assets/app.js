@@ -33,7 +33,7 @@
   apply();
 
   const links = [...document.querySelectorAll('[data-nav]')];
-  const sections = ['overview', ...groups.map((g) => g.id), 'commits-all'].map((id) => document.getElementById(id)).filter(Boolean);
+  const sections = ['overview', 'built', ...groups.map((g) => g.id), 'commits-all'].map((id) => document.getElementById(id)).filter(Boolean);
   let queued = false;
   const mark = () => {
     queued = false;
