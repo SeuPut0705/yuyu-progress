@@ -22,6 +22,31 @@
   for (const c of chips) c.addEventListener('click', () => { wave = c.dataset.waveFilter; apply(); });
   apply();
 
+  // 막힌 것·일정·범위 밖·기록은 탭 한 벌로 보인다. 주소가 그 패널이면 그 탭을 연다.
+  const root = document.querySelector('.tabs');
+  const panels = [...root.querySelectorAll(':scope > .panel')];
+  document.documentElement.classList.add('js');
+  const bar = Object.assign(document.createElement('div'), { className: 'tabbar', role: 'tablist' });
+  const tabs = panels.map((p) => {
+    const t = Object.assign(document.createElement('button'), { type: 'button', role: 'tab', textContent: p.dataset.panel });
+    if (p.dataset.count) t.insertAdjacentHTML('beforeend', ` <span class="n">${p.dataset.count}</span>`);
+    t.addEventListener('click', () => show(p));
+    bar.append(t);
+    return t;
+  });
+  const show = (panel) => {
+    panels.forEach((p, i) => { p.hidden = p !== panel; tabs[i].setAttribute('aria-selected', String(p === panel)); });
+  };
+  root.prepend(bar);
+  const fromHash = () => {
+    const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    const panel = panels.find((p) => p === el || p.contains(el));
+    if (panel) { show(panel); if (panel === el) root.scrollIntoView(); }
+  };
+  show(panels[0]);
+  addEventListener('hashchange', fromHash);
+  fromHash();
+
   // 주소의 #item-ID로 들어오거나 막힌 것의 ID 칩을 누르면 그 항목을 펼친다.
   const openFromHash = () => {
     const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
